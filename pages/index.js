@@ -14,8 +14,8 @@ export default function Home() {
 
   useEffect(async () => {
     // add your Realm App Id to the .env.local file
-    const REALM_APP_ID = process.env.NEXT_PUBLIC_REALM_APP_ID;
-    const app = new Realm.App({ id: REALM_APP_ID });
+    const REALM_APP_ID = 'products-ldhjb';
+    const app = new Realm.App({ id: 'products-ldhjb' });
     const credentials = Realm.Credentials.anonymous();
     try {
       const user = await app.logIn(credentials);
